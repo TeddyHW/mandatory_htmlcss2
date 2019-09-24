@@ -15,22 +15,37 @@ header {
   }
 }
 .main-img {
-margin-top: 150px;
+margin-top: 110px;
 display: flex;
 direction: ltr;
 flex-wrap: wrap;
 justify-content: space-around;
 align-items: stretch;
-align-content: stretch;
-}
-.big-img {
-  margin-top: 50px;
-  display: flex;
-  direction: ltr;
-  flex-wrap: wrap;
-  justify-content: space-around;
+align-content: space-around;
 }
 img {
+ margin-top: 40px;
  margin-left: 10px;
  margin-right: 10px;
+ width: 150px;
+}
+@media (min-width: 1392px) {
+  .main-img img:nth-last-child(-n+4){
+    width: 280px;
+  }
+}
+@media (max-width: 1392px) and (min-width: 1210px) {
+  .main-img img:nth-last-child(-n+5){
+    width: 200px;
+  }
+}
+/*@media (max-width: 1210px) and (min-width: 1055px){
+  .main-img img:nth-last-child(-n+6){
+    width: 180px;
+  }
+}*/
+@media (max-width: 1055px) and (min-width: 880px) {
+  .main-img img:nth-last-child(-n+2){
+    width: 350px;
+  }
 }
