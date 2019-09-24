@@ -6,6 +6,15 @@ header {
   left: 0px;
   width: 100%;
 }
+.lin {
+  position: fixed;
+  top: 45px;
+  left: 130px;
+  font-size: large;
+}
+.lin a {
+  margin-left: 10px;
+}
 @media (max-width: 700px){
   header > .lin {
     display: none;
